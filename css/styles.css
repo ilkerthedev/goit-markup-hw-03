@@ -159,6 +159,7 @@ section.mottos {
 section ul.motto-lists {
   display: flex;
   gap: 24px;
+  
 }
 
 section.mottos h3 {
@@ -168,7 +169,7 @@ section.mottos h3 {
   color: #2e2f42;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  width: calc((100% - 72px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 section.mottos p {
@@ -255,7 +256,6 @@ section div.app-box{
   border: 1px solid #e7e9fc;
   border-top: none;
   margin-bottom: 8px;
-  
 }
 
 section.portfolio h3 {
