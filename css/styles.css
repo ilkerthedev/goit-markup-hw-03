@@ -161,10 +161,6 @@ section ul.motto-lists {
   gap: 24px;
 }
 
-section li.motto-list-items {
-  width: calc((100% - 72px) / 4);
-}
-
 section.mottos h3 {
   font-weight: 500;
   font-size: 20px;
@@ -172,6 +168,7 @@ section.mottos h3 {
   color: #2e2f42;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  width: calc((100% - 72px) / 4);
 }
 
 section.mottos p {
@@ -200,11 +197,18 @@ section ul.member-lists {
 
 section.team li.members {
   background-color: #ffffff;
-  width: calc((100% - 72px) / 4);
 }
 
 section.team li.members:first-child {
   border-radius: 0px 0px 4px 4px;
+}
+
+section img.members{
+  width: calc((100% - 72px) / 4);
+}
+
+section div.members-box{
+  padding: 32px 0;
 }
 
 section.team h3.team-member {
@@ -213,6 +217,16 @@ section.team h3.team-member {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+section p.tittle{
+  text-align: center;
+}
+
+section.portfolio {
+  padding: 120px 0;
 }
 
 section.portfolio h2 {
@@ -222,6 +236,26 @@ section.portfolio h2 {
   text-transform: capitalize;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
+}
+
+section ul.app-lists{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+section.portfolio img{
+  
+}
+
+section div.app-box{
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+  
 }
 
 section.portfolio h3 {
@@ -234,12 +268,19 @@ section.portfolio h3 {
 
 footer.footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
-footer > a.logo > span.studio-white {
+footer a.logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+footer span.studio-white {
   color: #f4f4fd;
 }
 
 footer p.info {
   color: #f4f4fd;
+  max-width: 264px;
 }
