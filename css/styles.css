@@ -8,6 +8,24 @@ body {
   letter-spacing: 0.02em;
 }
 
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+header div {
+  display: flex;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  display: block;
+}
+
 ul {
   list-style-type: none;
 }
@@ -28,6 +46,7 @@ a.logo {
   font-size: 18px;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 a.logo > span {
@@ -37,13 +56,21 @@ a.logo > span {
 nav.navigation {
   color: #2e2f42;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+nav ul.top-bar-icons {
+  display: flex;
+  gap: 40px;
 }
 
 nav a.nav-icons {
   color: #2e2f42;
+  padding: 24px 0;
 }
 
-nav a.nav-icons:focus{
+nav a.nav-icons:focus {
   color: #404bbf;
 }
 
@@ -54,6 +81,12 @@ nav a.nav-icons:hover {
 address {
   font-style: normal;
 }
+
+address ul.address-icons {
+  display: flex;
+  gap: 40px;
+}
+
 .address-info {
   color: #434455;
   font-weight: 500;
@@ -67,8 +100,9 @@ address {
   color: #404bbf;
 }
 
-section.top-block {
+.top-block {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 h1.effective {
@@ -77,15 +111,23 @@ h1.effective {
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin: 0 auto; /* ? */
 }
 
-section.top-block > button.order-service {
+button.order-service {
   background-color: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 section.top-block > button.order-service:hover {
@@ -96,12 +138,40 @@ section.top-block > button.order-service:focus {
   background-color: #404bbf;
 }
 
+section.mottos {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+section ul.motto-lists {
+  display: flex;
+  gap: 24px;
+}
+
+section li.motto-list-items {
+  width: calc((100% - 72px) / 4);
+}
+
 section.mottos h3 {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
-  letter-spacing: 0.02em
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 section.mottos p {
@@ -110,6 +180,7 @@ section.mottos p {
 
 section.team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 section.team h2 {
@@ -119,13 +190,24 @@ section.team h2 {
   text-transform: capitalize;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
-section.team li.members{
-  background-color: #FFFFFF
+section ul.member-lists {
+  display: flex;
+  gap: 24px;
 }
 
-section.team h3.team-member{
+section.team li.members {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+}
+
+section.team li.members:first-child {
+  border-radius: 0px 0px 4px 4px;
+}
+
+section.team h3.team-member {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
