@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -10,14 +16,16 @@ body {
 
 header {
   border-bottom: 1px solid #e7e9fc;
+  padding: 20px 0px;
 }
 
 header div {
   display: flex;
+  justify-content: space-around;
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -116,18 +124,20 @@ h1.effective {
 }
 
 button.order-service {
+  display: block;
   background-color: #4d5ae5;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  cursor: pointer;
-  display: block;
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 section.top-block > button.order-service:hover {
@@ -159,7 +169,6 @@ section.mottos {
 section ul.motto-lists {
   display: flex;
   gap: 24px;
-  
 }
 
 section.mottos h3 {
@@ -168,8 +177,7 @@ section.mottos h3 {
   line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  margin-bottom: 8px ;
 }
 
 section.mottos p {
@@ -204,11 +212,11 @@ section.team li.members:first-child {
   border-radius: 0px 0px 4px 4px;
 }
 
-section img.members{
+section img.members {
   width: calc((100% - 72px) / 4);
 }
 
-section div.members-box{
+section div.members-box {
   padding: 32px 0;
 }
 
@@ -222,7 +230,7 @@ section.team h3.team-member {
   margin-bottom: 8px;
 }
 
-section p.tittle{
+section p.tittle {
   text-align: center;
 }
 
@@ -240,18 +248,17 @@ section.portfolio h2 {
   margin-bottom: 72px;
 }
 
-section ul.app-lists{
+section ul.app-lists {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
 
-section.portfolio img{
-  
+section.portfolio img {
 }
 
-section div.app-box{
+section div.app-box {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
