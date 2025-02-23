@@ -97,7 +97,7 @@ address ul.address-icons {
 
 .address-info {
   color: #434455;
-  font-weight: 500;
+  font-weight: normal;
 }
 
 .address-info:hover {
@@ -171,7 +171,7 @@ section ul.motto-lists {
   gap: 24px;
 }
 
-section li.motto-list-items{
+section li.motto-list-items {
   flex-basis: calc((100% - 72px) / 4);
 }
 
@@ -263,12 +263,12 @@ section div.app-box {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
-section li.apps{ /* ? */
+section li.apps {
+  /* ? */
   flex: 1;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 section.portfolio h3 {
@@ -277,6 +277,7 @@ section.portfolio h3 {
   line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 footer.footer {
